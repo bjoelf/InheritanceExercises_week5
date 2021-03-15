@@ -15,16 +15,14 @@ namespace InheritanceExercises_week5
         {
             List<Vehicle> Vehicles = new List<Vehicle>();
 
-            Car rescuevehicle = new Car(true);
+            Car rescuevehicle = new Car(1234,"Gasoline", 4,true);
             Vehicles.Add(rescuevehicle);
 
-            Truck hauler = new Truck(9875,"RaceTeamStuff");
+            Truck hauler = new Truck(9875,"Diesel", 1,5423,"RaceTeamStuff", true);
             Vehicles.Add(hauler);
 
-            Motorcycle racebike1 = new Motorcycle(58);
+            Motorcycle racebike1 = new Motorcycle(58,120,"Racefuel",0,0,null);
             Vehicles.Add(racebike1);
-            Motorcycle racebike2 = new Motorcycle(99);
-            Vehicles.Add(racebike2);
 
             foreach (Vehicle itemInList in Vehicles)
             {
