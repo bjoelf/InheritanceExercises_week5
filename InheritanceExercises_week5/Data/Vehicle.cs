@@ -14,6 +14,7 @@ namespace InheritanceExercises_week5.Data
 
         private static int idCounter = 0;
 
+
         public void Drive(int numberOfPassangers)
         {
             EngineRunning = true;
@@ -36,7 +37,11 @@ namespace InheritanceExercises_week5.Data
         }
 
     }
-    internal class Car : Vehicle
+
+    public interface IDriveable {
+        void Drive();
+    }
+    internal class Car : Vehicle, IDriveable
     {
         public bool DriverTotheLeft { get; set; }
 
@@ -48,8 +53,13 @@ namespace InheritanceExercises_week5.Data
         {
             return base.ToString() + $" DriverTotheLeft: {DriverTotheLeft}";
         }
+
+        public void Drive()
+        {
+            this.EngineRunning = true;
+        }
     }
-    internal class Truck : Car
+    internal class Truck : Car, IDriveable
     {
         public int PayLoadCapacity { get; set; }
         public string CargoType { get; set; }
@@ -63,8 +73,12 @@ namespace InheritanceExercises_week5.Data
         {
             return base.ToString() + $" PayLoadCapacity: {PayLoadCapacity} CargoType: {CargoType}";
         }
+        public void Drive()
+        {
+            this.EngineRunning = true;
+        }
     }
-    internal class Motorcycle : Vehicle
+    internal class Motorcycle : Vehicle, IDriveable
     {
         public int MaxLeanAngle { get; set; }
 
@@ -75,6 +89,10 @@ namespace InheritanceExercises_week5.Data
         public override string ToString()
         {
             return base.ToString() + $" MaxLeanAngle: {MaxLeanAngle}";
+        }
+        public void Drive()
+        {
+            this.EngineRunning = true;
         }
     }
 }

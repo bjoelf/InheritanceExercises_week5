@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExercises_week5", "InheritanceExercises_week5\InheritanceExercises_week5.csproj", "{6BCFF584-97CB-445A-9E7B-B9A8F39602C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritanceExercises_week5", "InheritanceExercises_week5\InheritanceExercises_week5.csproj", "{6BCFF584-97CB-445A-9E7B-B9A8F39602C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books", "Books\Books.csproj", "{84F29F26-F2E7-446B-BE0F-A7164109ADEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6BCFF584-97CB-445A-9E7B-B9A8F39602C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BCFF584-97CB-445A-9E7B-B9A8F39602C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BCFF584-97CB-445A-9E7B-B9A8F39602C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F29F26-F2E7-446B-BE0F-A7164109ADEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F29F26-F2E7-446B-BE0F-A7164109ADEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F29F26-F2E7-446B-BE0F-A7164109ADEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F29F26-F2E7-446B-BE0F-A7164109ADEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
